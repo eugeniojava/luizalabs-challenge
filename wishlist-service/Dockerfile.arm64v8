@@ -1,0 +1,4 @@
+FROM arm64v8/eclipse-temurin:17-jre-focal
+COPY target/wishlist-service.jar /app/wishlist-service.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "/app/wishlist-service.jar"]
